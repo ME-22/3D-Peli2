@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: dry_ground
+  m_Name: Snow
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ShaderKeywords: _NORMALMAP
   m_LightmapFlags: 4
@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: b46b45208f2d7bb408fa10ad2d3b8c31, type: 3}
+        m_Texture: {fileID: 2800000, guid: ad27ffda21296754895cef2ac95a9f34, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: -4.9, y: -0.34}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 0202c47dc17ef954880ad45a2c4478a5, type: 3}
+        m_Texture: {fileID: 2800000, guid: f72278b9c5de6bc46b011395ec6956b5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -33,9 +33,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b46b45208f2d7bb408fa10ad2d3b8c31, type: 3}
+        m_Texture: {fileID: 2800000, guid: ad27ffda21296754895cef2ac95a9f34, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: -4.9, y: -0.34}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -51,7 +51,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
-    - _BumpScale: 2.77
+    - _BumpScale: -0.64
     - _Cull: 2
     - _Cutoff: 0.5
     - _DstBlend: 0
@@ -63,7 +63,7 @@ Material:
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -75,7 +75,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
---- !u!114 &6118297296557590856
+--- !u!114 &839157586520690406
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
