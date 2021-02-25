@@ -28059,6 +28059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1576752412}
   - component: {fileID: 1576752411}
+  - component: {fileID: 1576752413}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -28092,7 +28093,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576752410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.11, z: 0}
+  m_LocalPosition: {x: 0, y: 63.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1843686138}
@@ -28100,6 +28101,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1576752413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576752410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8587dcbe729510343bb29d78fc3074cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1576752411}
+  speed: 20
+  gravity: -9.82
+  jumpHeigt: 3
 --- !u!43 &1658760828
 Mesh:
   m_ObjectHideFlags: 0
@@ -46573,7 +46590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c65ca07e4c10b3f4e92590ae4ef33793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 10000000
+  mouseSensitivity: 100
   minXAgle: -70
   maxXAngle: 80
   playerBody: {fileID: 1576752412}
@@ -46752,7 +46769,7 @@ GameObject:
   - component: {fileID: 1929076210}
   - component: {fileID: 1929076209}
   - component: {fileID: 1929076208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46780,7 +46797,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929076207}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
