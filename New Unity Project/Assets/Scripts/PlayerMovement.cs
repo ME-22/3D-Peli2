@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded;
 
-    private bool canMove;
+    private bool canMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
         Jump();
 
-        velocity.y += gravity + Time.deltaTime;
+        velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
     }
