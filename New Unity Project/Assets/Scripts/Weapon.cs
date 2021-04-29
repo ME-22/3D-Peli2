@@ -106,6 +106,7 @@ public class Weapon : MonoBehaviour
             {
                 firearms[i].gameObject.SetActive(true);
                 fireArm = firearms[i].GetComponent<FireArm>();
+                Journar.Instance.Log(fireArm.weaponName);
             }
         }
     }

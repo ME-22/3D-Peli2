@@ -7,8 +7,9 @@ public interface IDie
 {
     void Die();
 }
+public interface IInteractable
+{
+   void Interact();
+}
 
-//public interface IInteractable()
-   // {
-       // void Interface;
-   // }
+
