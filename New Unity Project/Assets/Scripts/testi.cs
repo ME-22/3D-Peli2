@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class testi : MonoBehaviour, ITakeDamage<float>, IDie //IInteractable
+public class testi : MonoBehaviour, ITakeDamage<float>, IDie, IInteractable
 {
+    public string objName = "Dummy enemy";
     public float health = 5;
 
     bool isAlive = true;
@@ -38,5 +39,10 @@ public class testi : MonoBehaviour, ITakeDamage<float>, IDie //IInteractable
     public void TakeDamage()
     {
         print("Au ;-;");
+    }
+
+    public void Interact()
+    {
+        Journar.Instance.Log($"object name is {objName} and it has {health} hp");
     }
 }
